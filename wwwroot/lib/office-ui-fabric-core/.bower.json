@@ -1,0 +1,39 @@
+{
+  "name": "office-ui-fabric-core",
+  "author": "Office UI Fabric Team",
+  "version": "9.2.0",
+  "description": "The front-end framework for building experiences for Office 365.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OfficeDev/Office-UI-Fabric-Core"
+  },
+  "main": "dist/css/fabric.css",
+  "private": false,
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "*.sublime*",
+    "typings",
+    "ghdocs",
+    "server",
+    "gulp",
+    ".travis.yml",
+    ".sass-lint.yml",
+    ".pullapprove.yml",
+    ".htmllintrc",
+    ".jshintrc",
+    ".csscomb.json"
+  ],
+  "homepage": "https://github.com/OfficeDev/office-ui-fabric-core",
+  "_release": "9.2.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "9.2.0",
+    "commit": "f8c9756f07e993646f5a944d3e03c97154206b2b"
+  },
+  "_source": "https://github.com/OfficeDev/office-ui-fabric-core.git",
+  "_target": "^9.2.0",
+  "_originalSource": "office-ui-fabric-core",
+  "_direct": true
+}

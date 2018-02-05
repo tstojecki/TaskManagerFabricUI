@@ -1,0 +1,162 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+
+<div class="ms-CommandBar">
+    <div class="ms-CommandBar-sideCommands">
+        <div class="ms-CommandButton ms-CommandButton--noLabel">
+        <button class="ms-CommandButton-button">
+            <span class="ms-CommandButton-icon ms-fontColor-themePrimary"><i class="ms-Icon ms-Icon--Info"></i></span> 
+            <span class="ms-CommandButton-label"></span> 
+        </button>
+        </div>
+    </div>
+    <div class="ms-CommandBar-mainArea">
+        <div class="ms-SearchBox ms-SearchBox--commandBar">
+        <input class="ms-SearchBox-field" type="text" value="">
+        <label class="ms-SearchBox-label">
+            <i class="ms-SearchBox-icon ms-Icon ms-Icon--Search"></i>
+            <span class="ms-SearchBox-text">Search tasks</span> 
+        </label>
+        <div class="ms-CommandButton ms-SearchBox-clear ms-CommandButton--noLabel">
+            <button class="ms-CommandButton-button">
+            <span class="ms-CommandButton-icon"><i class="ms-Icon ms-Icon--Cancel"></i></span> 
+            <span class="ms-CommandButton-label"></span> 
+            </button>
+        </div>
+        <div class="ms-CommandButton ms-SearchBox-exit ms-CommandButton--noLabel">
+            <button class="ms-CommandButton-button">
+            <span class="ms-CommandButton-icon"><i class="ms-Icon ms-Icon--ChromeBack"></i></span> 
+            <span class="ms-CommandButton-label"></span> 
+            </button>
+        </div>
+        <div class="ms-CommandButton ms-SearchBox-filter ms-CommandButton--noLabel">
+            <button class="ms-CommandButton-button">
+            <span class="ms-CommandButton-icon"><i class="ms-Icon ms-Icon--Filter"></i></span> 
+            <span class="ms-CommandButton-label"></span> 
+            </button>
+        </div>
+        </div>
+        <div class="ms-CommandButton">
+        <button class="ms-CommandButton-button">
+            <span class="ms-CommandButton-icon ms-fontColor-themePrimary"><i class="ms-Icon ms-Icon--CircleRing"></i></span> 
+            <span class="ms-CommandButton-label">New</span> 
+            <span class="ms-CommandButton-dropdownIcon"><i class="ms-Icon ms-Icon--ChevronDown"></i></span> 
+        </button>
+        <ul class="ms-ContextualMenu is-opened ms-ContextualMenu--hasIcons">
+            <li class="ms-ContextualMenu-item">
+            <a class="ms-ContextualMenu-link" tabindex="1">Task</a> 
+            <i class="ms-Icon ms-Icon--TaskLogo"></i>
+            </li>
+            <li class="ms-ContextualMenu-item ms-ContextualMenu-item--divider"></li>
+            <li class="ms-ContextualMenu-item">
+            <a class="ms-ContextualMenu-link" tabindex="1">Document</a> 
+            <i class="ms-Icon ms-Icon--Page"></i>
+            </li>
+            <li class="ms-ContextualMenu-item">
+            <a class="ms-ContextualMenu-link" tabindex="1">Picture</a> 
+            <i class="ms-Icon ms-Icon--Picture"></i>
+            </li>
+        </ul>
+        </div>
+        <div class="ms-CommandButton" id="btnBurndown">
+        <button class="ms-CommandButton-button">
+            <span class="ms-CommandButton-icon ms-fontColor-themePrimary"><i class="ms-Icon ms-Icon--CircleRing"></i></span> 
+            <span class="ms-CommandButton-label">Burndown</span> 
+        </button>
+        </div>
+        <div class="ms-CommandButton" id="btnTeam">
+        <button class="ms-CommandButton-button">
+            <span class="ms-CommandButton-icon ms-fontColor-themePrimary"><i class="ms-Icon ms-Icon--CircleRing"></i></span> 
+            <span class="ms-CommandButton-label">Team</span> 
+        </button>
+        </div>
+        <div class="ms-CommandButton ms-CommandBar-overflowButton ms-CommandButton--noLabel">
+        <button class="ms-CommandButton-button">
+            <span class="ms-CommandButton-icon"><i class="ms-Icon ms-Icon--More"></i></span> 
+            <span class="ms-CommandButton-label"></span> 
+        </button>
+        <ul class="ms-ContextualMenu is-opened ms-ContextualMenu--hasIcons">
+            <li class="ms-ContextualMenu-item">
+            <a class="ms-ContextualMenu-link" tabindex="1">Task</a> 
+            <i class="ms-Icon ms-Icon--TaskLogo"></i>
+            </li>
+            <li class="ms-ContextualMenu-item ms-ContextualMenu-item--divider"></li>
+            <li class="ms-ContextualMenu-item">
+            <a class="ms-ContextualMenu-link" tabindex="1">Document</a> 
+            <i class="ms-Icon ms-Icon--Page"></i>
+            </li>
+            <li class="ms-ContextualMenu-item">
+            <a class="ms-ContextualMenu-link" tabindex="1">Picture</a> 
+            <i class="ms-Icon ms-Icon--Picture"></i>
+            </li>
+        </ul>
+        </div>
+    </div>
+</div>
+
+<div class="ms-Grid">
+    <div class="ms-Grid-row tasks-row">
+        <div class="ms-Grid-col ms-sm6 ms-md4 ms-lg4">
+            <div>
+                <h3>My Tasks</h3>
+                <div>
+                    <div class="ms-CheckBox">
+                    <input tabindex="-1" type="checkbox" class="ms-CheckBox-input" checked>
+                    <label role="checkbox" class="ms-CheckBox-field" tabindex="0" aria-checked="false" name="checkboxa">
+                        <span class="ms-Label">Task Assignment 1</span> 
+                    </label>
+                    </div>
+                    <div class="ms-CheckBox">
+                    <input tabindex="-1" type="checkbox" class="ms-CheckBox-input">
+                    <label role="checkbox" class="ms-CheckBox-field" tabindex="0" aria-checked="false" name="checkboxb">
+                        <span class="ms-Label">Task Assignment 2</span> 
+                    </label>
+                    </div>
+                    <div class="ms-CheckBox">
+                    <input tabindex="-1" type="checkbox" class="ms-CheckBox-input">
+                    <label role="checkbox" class="ms-CheckBox-field" tabindex="0" aria-checked="false" name="checkboxc">
+                        <span class="ms-Label">Task Assignment 3</span> 
+                    </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ms-Grid-col ms-sm6 ms-md8 ms-lg8">
+        </div>
+    </div>
+    <div class="ms-Grid-row progress-row">
+        <div class="ms-Grid-col">
+            <div id="progressIndicator" class="ms-ProgressIndicator">
+                <div class="ms-ProgressIndicator-itemName">My Progress</div>
+                <div class="ms-ProgressIndicator-itemProgress">
+                    <div class="ms-ProgressIndicator-progressTrack"></div>
+                    <div class="ms-ProgressIndicator-progressBar"></div>
+                </div>
+                <div class="ms-ProgressIndicator-itemDescription">Completed Tasks</div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="ms-Dialog ms-Dialog--multiline" style="min-width: 610px;">
+      <div class="ms-Dialog-content">
+        <div id="burndown" style="min-width: 610px; height: 400px; margin: 0 auto"></div>
+      </div>
+  </div>
+
+  <div class="ms-Panel">
+    <button class="ms-Panel-closeButton ms-PanelAction-close">
+      <i class="ms-Panel-closeIcon ms-Icon ms-Icon--Cancel"></i>
+    </button>
+    <div class="ms-Panel-contentInner">
+      <p class="ms-Panel-headerText">Panel</p>
+      <div class="ms-Panel-content">
+        <span class="ms-font-m">Content goes here</span> 
+      </div>
+    </div>
+  </div>
+
+  </div>

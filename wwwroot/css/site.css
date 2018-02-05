@@ -1,0 +1,26 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI Web (West European)'
+}
+
+.container {
+    margin: 0 auto;
+    border: 1px solid #eaeaea;
+    vertical-align: middle;
+}
+
+.ms-Grid-col {
+    padding-left: 20px;
+}
+
+.tasks-row {
+    margin-bottom: 20px;
+}
+
+.progress-row {
+    margin-top: 20px;
+    padding: 10px 0 10px 0;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+}
